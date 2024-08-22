@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Página do Administrador</h1>
+  </header>
+  <section class="agenda-um">
+    <h2>Agendamento</h2>
+    <div class="b-agenda">
+      <div class="agenda">
+        <table class="table-agenda">
+          <colgroup>
+            <col class="columns">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Cliente</th>
+              <th>Serviço</th>
+              <th>Horário</th>
+              <th>Funcionário</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Roberto</td>
+              <td>Corte</td>
+              <td>08:40</td>
+              <td>Felipe</td>
+              <td>22/08</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="adicionar">
+    <h2>Adicionar Funcionário</h2>
+    <form class="form">
+      <label for="nome">Inseri Nome</label>
+      <input type="text" name="nome">
+      <label for="email">Inserir Email</label>
+      <input type="email" name="email">
+      <p>Especialidades:</p>
+      <div class="funcoes">
+        <div>
+          <input type="checkbox" name="corte" id="corte">
+          <label for="corte">Corte</label>
+        </div>
+        <div>
+          <input type="checkbox" name="barba" id="barba">
+          <label for="barba">Barba</label>
+        </div>
+        <div>
+          <input type="checkbox" name="pintura" id="pintura">
+          <label for="pintura">Pintura</label>
+        </div>
+      </div>
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+  <script src="admin.js"></script>
+</body>
+</html>

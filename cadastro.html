@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickbeard - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./_reset.css">
+</head>
+<body>
+    <header class="cadastro-cabecalho">
+        <h1 class="cadastro-cabecalho__titulo">CLICKBEARD</h1>
+    </header>
+    <main class="container flex flex--coluna flex--centro">
+        <section class="cartao">
+            <h2 class="cartao__titulo">Realizar login</h2>
+            <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
+                <fieldset>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email" required>
+                        <label class="input-label" for="email">Email</label>
+                    </div>
+                    <div class="input-container">
+                        <input name="senha" id="senha" class="input" type="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." data-tipo="senha" required>
+                        <label class="input-label" for="senha">Senha</label>
+                    </div>
+                </fieldset>
+                <button class="botao">Cadastro</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Clickbeard. Todos os direitos reservados.</p>
+
+        </div>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+    <script src="./assets/js/logar.js" type="module"></script>
+</body>
+</html>
+
+

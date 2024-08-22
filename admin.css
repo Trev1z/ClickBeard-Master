@@ -1,0 +1,117 @@
+:root {
+  --background-color: #f0f0f0;
+  --header-background: #333;
+  --header-text-color: #fff;
+  --section-background: #fff;
+  --section-border-radius: 8px;
+  --table-border-color: #ccc;
+  --table-header-background: #333;
+  --table-header-text-color: #fff;
+  --table-cell-padding: 10px;
+  --form-label-color: #555;
+  --form-input-background: #f9f9f9;
+  --form-input-border-color: #ccc;
+  --form-input-text-color: #333;
+  --button-background: #333;
+  --button-text-color: #fff;
+  --button-hover-background: #555;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--header-background);
+  color: var(--header-text-color);
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+section {
+  background-color: var(--section-background);
+  border-radius: var(--section-border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.table-agenda {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-agenda th,
+.table-agenda td {
+  border: 1px solid var(--table-border-color);
+  padding: var(--table-cell-padding);
+  text-align: left;
+}
+
+.table-agenda th {
+  background-color: var(--table-header-background);
+  color: var(--table-header-text-color);
+}
+
+.form label {
+  color: var(--form-label-color);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+  background-color: var(--form-input-background);
+  border: 1px solid var(--form-input-border-color);
+  border-radius: 4px;
+  color: var(--form-input-text-color);
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: calc(100% - 22px);
+}
+
+.funcoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.funcoes div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.funcoes input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: var(--button-background);
+  border: none;
+  border-radius: 4px;
+  color: var(--button-text-color);
+  cursor: pointer;
+  font-size: 1em;
+  padding: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--button-hover-background);
+}
